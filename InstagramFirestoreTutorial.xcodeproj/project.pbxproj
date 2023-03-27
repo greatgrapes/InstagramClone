@@ -24,6 +24,7 @@
 		B0DDC90A29D1CECE002C6878 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DDC90929D1CECE002C6878 /* LoginController.swift */; };
 		B0DDC90C29D1CEDB002C6878 /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DDC90B29D1CEDB002C6878 /* RegistrationController.swift */; };
 		B0DDC90E29D1D573002C6878 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DDC90D29D1D573002C6878 /* CustomTextField.swift */; };
+		B0DDC91029D1F093002C6878 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DDC90F29D1F093002C6878 /* AuthenticationViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		B0DDC90929D1CECE002C6878 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		B0DDC90B29D1CEDB002C6878 /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
 		B0DDC90D29D1D573002C6878 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		B0DDC90F29D1F093002C6878 /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 		B085C54329C2DD59005647D7 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				B0DDC90F29D1F093002C6878 /* AuthenticationViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -233,6 +236,7 @@
 				B085C59A29C3624F005647D7 /* FeedCell.swift in Sources */,
 				B085C54D29C2F15A005647D7 /* ImageSelectorController.swift in Sources */,
 				B085C54F29C2F168005647D7 /* NotificationController.swift in Sources */,
+				B0DDC91029D1F093002C6878 /* AuthenticationViewModel.swift in Sources */,
 				B085C54B29C2F14F005647D7 /* SearchController.swift in Sources */,
 				B085C53129C2DD12005647D7 /* ViewController.swift in Sources */,
 				B085C55129C2F173005647D7 /* ProfileController.swift in Sources */,
