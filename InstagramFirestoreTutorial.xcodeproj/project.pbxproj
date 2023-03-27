@@ -21,6 +21,9 @@
 		B085C55329C2F4AF005647D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B085C55229C2F4AF005647D7 /* Assets.xcassets */; };
 		B085C59A29C3624F005647D7 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B085C59929C3624F005647D7 /* FeedCell.swift */; };
 		B085C59C29C36392005647D7 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B085C59B29C36392005647D7 /* Extensions.swift */; };
+		B0DDC90A29D1CECE002C6878 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DDC90929D1CECE002C6878 /* LoginController.swift */; };
+		B0DDC90C29D1CEDB002C6878 /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DDC90B29D1CEDB002C6878 /* RegistrationController.swift */; };
+		B0DDC90E29D1D573002C6878 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DDC90D29D1D573002C6878 /* CustomTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +43,9 @@
 		B085C55229C2F4AF005647D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../Downloads/Assets.xcassets; sourceTree = "<group>"; };
 		B085C59929C3624F005647D7 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		B085C59B29C36392005647D7 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		B0DDC90929D1CECE002C6878 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		B0DDC90B29D1CEDB002C6878 /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
+		B0DDC90D29D1D573002C6878 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +113,7 @@
 		B085C54229C2DD58005647D7 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				B0DDC90829D1CEBE002C6878 /* Authentication */,
 				B085C54629C2EF87005647D7 /* MainTabController.swift */,
 				B085C54829C2F134005647D7 /* FeedController.swift */,
 				B085C54A29C2F14F005647D7 /* SearchController.swift */,
@@ -128,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				B085C59929C3624F005647D7 /* FeedCell.swift */,
+				B0DDC90D29D1D573002C6878 /* CustomTextField.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -137,6 +145,15 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		B0DDC90829D1CEBE002C6878 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				B0DDC90929D1CECE002C6878 /* LoginController.swift */,
+				B0DDC90B29D1CEDB002C6878 /* RegistrationController.swift */,
+			);
+			path = Authentication;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,7 +227,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0DDC90E29D1D573002C6878 /* CustomTextField.swift in Sources */,
 				B085C54929C2F134005647D7 /* FeedController.swift in Sources */,
+				B0DDC90A29D1CECE002C6878 /* LoginController.swift in Sources */,
 				B085C59A29C3624F005647D7 /* FeedCell.swift in Sources */,
 				B085C54D29C2F15A005647D7 /* ImageSelectorController.swift in Sources */,
 				B085C54F29C2F168005647D7 /* NotificationController.swift in Sources */,
@@ -221,6 +240,7 @@
 				B085C54729C2EF87005647D7 /* MainTabController.swift in Sources */,
 				B085C59C29C36392005647D7 /* Extensions.swift in Sources */,
 				B085C52F29C2DD12005647D7 /* SceneDelegate.swift in Sources */,
+				B0DDC90C29D1CEDB002C6878 /* RegistrationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
