@@ -86,6 +86,7 @@ class LoginController: UIViewController {
     
     func configureUI() {
         configureGradientLayer()
+        //네비게이션 바 선 숨기기
         navigationController?.navigationBar.isHidden = true
         navigationController?.navigationBar.barStyle = .black
     

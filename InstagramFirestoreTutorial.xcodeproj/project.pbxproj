@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B03DB46429FFC04200EC0262 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B03DB46329FFC04200EC0262 /* Assets.xcassets */; };
 		B085C52D29C2DD12005647D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B085C52C29C2DD12005647D7 /* AppDelegate.swift */; };
 		B085C52F29C2DD12005647D7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B085C52E29C2DD12005647D7 /* SceneDelegate.swift */; };
 		B085C53129C2DD12005647D7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B085C53029C2DD12005647D7 /* ViewController.swift */; };
@@ -18,7 +19,6 @@
 		B085C54D29C2F15A005647D7 /* ImageSelectorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B085C54C29C2F15A005647D7 /* ImageSelectorController.swift */; };
 		B085C54F29C2F168005647D7 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B085C54E29C2F168005647D7 /* NotificationController.swift */; };
 		B085C55129C2F173005647D7 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B085C55029C2F173005647D7 /* ProfileController.swift */; };
-		B085C55329C2F4AF005647D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B085C55229C2F4AF005647D7 /* Assets.xcassets */; };
 		B085C59A29C3624F005647D7 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B085C59929C3624F005647D7 /* FeedCell.swift */; };
 		B085C59C29C36392005647D7 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B085C59B29C36392005647D7 /* Extensions.swift */; };
 		B0DDC90A29D1CECE002C6878 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DDC90929D1CECE002C6878 /* LoginController.swift */; };
@@ -28,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B03DB46329FFC04200EC0262 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B085C52929C2DD12005647D7 /* InstagramFirestoreTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramFirestoreTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B085C52C29C2DD12005647D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B085C52E29C2DD12005647D7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,7 +42,6 @@
 		B085C54C29C2F15A005647D7 /* ImageSelectorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSelectorController.swift; sourceTree = "<group>"; };
 		B085C54E29C2F168005647D7 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		B085C55029C2F173005647D7 /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
-		B085C55229C2F4AF005647D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../Downloads/Assets.xcassets; sourceTree = "<group>"; };
 		B085C59929C3624F005647D7 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		B085C59B29C36392005647D7 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		B0DDC90929D1CECE002C6878 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
@@ -90,7 +90,7 @@
 				B085C52E29C2DD12005647D7 /* SceneDelegate.swift */,
 				B085C53029C2DD12005647D7 /* ViewController.swift */,
 				B085C53229C2DD12005647D7 /* Main.storyboard */,
-				B085C55229C2F4AF005647D7 /* Assets.xcassets */,
+				B03DB46329FFC04200EC0262 /* Assets.xcassets */,
 				B085C53729C2DD13005647D7 /* LaunchScreen.storyboard */,
 				B085C53A29C2DD13005647D7 /* Info.plist */,
 			);
@@ -218,7 +218,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B085C53929C2DD13005647D7 /* LaunchScreen.storyboard in Resources */,
-				B085C55329C2F4AF005647D7 /* Assets.xcassets in Resources */,
+				B03DB46429FFC04200EC0262 /* Assets.xcassets in Resources */,
 				B085C53429C2DD12005647D7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
