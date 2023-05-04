@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>1066549147731-e9824q4i8ld7p4ij1nrrl5ufrspij6eu.apps.googleusercontent.com</string>
+	<string>37663862167-be9didkac5hnuk5q83o8jqovl2luo3vh.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.1066549147731-e9824q4i8ld7p4ij1nrrl5ufrspij6eu</string>
+	<string>com.googleusercontent.apps.37663862167-be9didkac5hnuk5q83o8jqovl2luo3vh</string>
 	<key>API_KEY</key>
-	<string>AIzaSyCjF0suvcMgepYcJqSzMMjirtUyJdyzdZc</string>
+	<string>AIzaSyBgwoHMZ1EkiIZFD4ty7-FkKaOfP2na2Qg</string>
 	<key>GCM_SENDER_ID</key>
-	<string>1066549147731</string>
+	<string>37663862167</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>com.winterInstagram.app.InstagramFirestoreTutorial</string>
 	<key>PROJECT_ID</key>
-	<string>instagramfirestoretutori-91f48</string>
+	<string>instagramclone-da71d</string>
 	<key>STORAGE_BUCKET</key>
-	<string>instagramfirestoretutori-91f48.appspot.com</string>
+	<string>instagramclone-da71d.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,6 +29,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:1066549147731:ios:f4af3e8b8795b88e9a2ea6</string>
+	<string>1:37663862167:ios:12dec4e6e32e656acde8d2</string>
 </dict>
 </plist>
