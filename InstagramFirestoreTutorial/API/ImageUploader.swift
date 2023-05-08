@@ -8,20 +8,22 @@
 import FirebaseStorage
 
 struct ImageUploader {
-    static func uploadImage(image: UIImage, completion: @escaping(String) -> Void) {
-        guard let imageData = image.jpegData(compressionQuality: 0.75) else { return }
+    //프로필 이미지 픽커에서 선택한 이미지를 데이터로 바꾸고.
+    //파이어베이스 스토리지에 데이터 형태로 저장합니다.
+    static func uploadImage(image: UIImage, complition:@escaping(String) -> Void) {
+        guard let imageData = image.jpegData(compressionQuality: 0.75) else {return}
         let filename = NSUUID().uuidString
         let ref = Storage.storage().reference(withPath: "/profile_images/\(filename)")
-        
         ref.putData(imageData, metadata: nil) { metadata, error in
-            if let error = error {
-                print("DEBUG: Failed to upload image \(error.localizedDescription)")
+            if error != nil {
+                print(error?.localizedDescription ?? "")
                 return
             }
             
-            ref.downloadURL { (url, error) in
-                guard let imageUrl = url?.absoluteString else { return }
-                completion(imageUrl)
+            ref.downloadURL { url, error in
+                guard let imageURL = url?.absoluteString else { return }
+                print("Debug: image Url \(imageURL)")
+                complition(imageURL)
             }
         }
     }

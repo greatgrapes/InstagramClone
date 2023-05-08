@@ -6,39 +6,33 @@
 //
 
 
-import UIKit
 import Firebase
-
-struct AuthCredentials {
-    let email: String
-    let password: String
-    let fullname: String
-    let username: String
-    let profileImage: UIImage
-}
+import UIKit
 
 struct AuthService {
-    static func logUserIn(withEmail email: String, password: String,  completion: @escaping(AuthDataResult?, Error?) -> Void) {
+    //로그인 메서드 입니다.
+    static func logUserIn(email: String, password: String, completion: @escaping(AuthDataResult?, Error?) -> Void) {
         Auth.auth().signIn(withEmail: email, password: password, completion: completion)
     }
     
-    static func registerUser(withCredential credentials: AuthCredentials, completion: @escaping(Error?) -> Void) {
-        
-        ImageUploader.uploadImage(image: credentials.profileImage) { imageUrl in
-            Auth.auth().createUser(withEmail: credentials.email, password: credentials.password) { (result, error) in
-                
-                if let error = error {
-                    print("DEBUG: Failed to register user \(error.localizedDescription)")
+    static func registerUser(credentials: AuthCredentials, completion: @escaping(Error?) -> Void) {
+        //구조화 시킨 데이터의 이미지를 ImageUploader 메서드를 이용해 파이어베이스 스토리지에 저장합니다.
+        ImageUploader.uploadImage(image: credentials.profileImage) { imageurl in
+            //파이어베이스에 새로운 유저 데이터를 만듭니다.
+            Auth.auth().createUser(withEmail: credentials.email, password: credentials.password) { result, error in
+                if error != nil {
+                    print("회원가입 에러")
                     return
                 }
                 
+                //[String: Any] 타입의 데이터를 파이어스토어에 저장합니다.
                 guard let uid = result?.user.uid else { return }
+                let data: [String: Any] = ["email": credentials.email,"fullname": credentials.fullName, "profileImageUrl": imageurl, "uid": uid, "username": credentials.userName]
                 
-                let data: [String: Any] = ["email": credentials.email, "fullname": credentials.fullname, "profileImageUrl": imageUrl, "uid": uid, "username": credentials.username];
-                COLLECTION_USERS.document(uid).setData(data, completion: completion)
+                Firestore.firestore().collection("users").document(uid).setData(data, completion: completion)
+                
             }
         }
     }
-     
-    
 }
+
